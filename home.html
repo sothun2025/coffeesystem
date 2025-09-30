@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="Image/posicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zee coffee shop-home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Reset & Body */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #d1c7be, #bfa89a);
+        color: #333;
+        overflow-x: hidden;
+      }
+
+      /* Navbar - Glassmorphism */
+      .navbar {
+        display: flex;
+        align-items: center;
+        padding: 15px 50px;
+        background: rgba(92, 82, 72, 0.75); /* semi-transparent */
+        backdrop-filter: blur(10px);
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        transition: 0.3s ease;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin-left: auto;
+      }
+
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 10px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-links li a:hover {
+        background: rgba(255, 255, 255, 0.15);
+        color: #00ffff;
+        transform: translateY(-2px);
+      }
+
+      .nav-links li a i {
+        font-size: 18px;
+      }
+
+      /* Hero Section - Glass Card */
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 50px;
+        background: rgba(124, 113, 104, 0.85);
+        backdrop-filter: blur(10px);
+        color: white;
+        gap: 50px;
+        border-radius: 20px;
+        margin: 30px auto;
+        max-width: 1200px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        flex-wrap: wrap;
+        transition: transform 0.3s ease;
+      }
+
+      .hero:hover {
+        transform: translateY(-5px);
+      }
+
+      .hero-content {
+        max-width: 500px;
+      }
+
+      .hero-content h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+      }
+
+      .hero-content h1 span {
+        color: #00ffff;
+      }
+
+      .hero-content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+
+      .btn {
+        display: inline-block;
+        background: linear-gradient(135deg, #e0a458, #ffd580);
+        color: #0d1b2a;
+        padding: 12px 30px;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .btn:hover {
+        background: linear-gradient(135deg, #ffd580, #e0a458);
+        transform: scale(1.1);
+        color: #0d1b2a;
+      }
+
+      /* Hero Image */
+      .hero-image img {
+        width: 450px;
+        max-width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        transition: transform 0.3s ease;
+      }
+
+      .hero-image img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Footer - Glass Effect */
+      footer {
+        text-align: center;
+        padding: 15px 0;
+        background: rgba(92, 82, 72, 0.75);
+        color: white;
+        font-size: 16px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 20px 20px 0 0;
+        margin-top: 46px;
+      }
+
+      /* Responsive */
+      @media screen and (max-width: 900px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+        }
+        .nav-links {
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-left: 0;
+          gap: 15px;
+        }
+        .hero-image {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Coffee Shop</div>
+        <ul class="nav-links">
+          <li>
+            <a href="#"><i class="home"></i> Home</a>
+          </li>
+          <li>
+            <a href="mian.html"><i class="menu"></i> Menu</a>
+          </li>
+          <li>
+            <a href="#"><i class="oder"></i> My Orders</a>
+          </li>
+          <li>
+            <a href="#"><i class="Report"></i> Report</a>
+          </li>
+          <li>
+            <a href="#"><i class="stock"></i> Stock</a>
+          </li>
+          <li>
+            <a href="index.html"><i class="logout"></i> Log out</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to <br />ZEE<span>&nbsp;COFFEE</span></h1>
+        <p class="subtitle">The best coffee</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="btn" id="btn">Learn More</a>
+      </div>
+      <div class="hero-image">
+        <img src="Image/download (1).jpg" alt="Coffee Cups" />
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 ZEE Coffee</p>
+    </footer>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Wait for the DOM to load
+        let settingsButton = document.querySelector(".logout");
+
+        if (settingsButton) {
+          settingsButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Stop the default behavior of the link
+
+            // Show confirmation alert
+            let choice = confirm("Do you want to Log In Again?");
+
+            if (choice) {
+              window.location.href = "login.html"; // Update with actual login page
+            } else {
+              window.location.href = "home.html"; // Update with actual signout page
+            }
+          });
+        } else {
+          console.error("Settings button not found!");
+        }
+      });
+    </script> -->
+  </body>
+</html>

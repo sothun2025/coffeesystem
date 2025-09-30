@@ -1,0 +1,114 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgba(27, 38, 59, 0.95); /* Slightly transparent for modern look */
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 360px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+h2 {
+  color: #e0a458; /* Highlight Dart Orange */
+  font-size: 32px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* space between icon and text */
+}
+
+h2 i {
+  color: #e0a458; /* same as title or different for contrast */
+  font-size: 36px; /* slightly bigger for emphasis */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+}
+
+/* Input with icon */
+.input-icon {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-icon i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e0a458;
+  font-size: 20px;
+}
+
+.input-icon input {
+  width: 85%;
+  padding: 12px 12px 12px 42px;
+  border: none;
+  border-radius: 25px;
+  background-color: #415a77;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-icon input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-icon input:focus {
+  background-color: #556b8d;
+  box-shadow: 0 0 10px #e0a458;
+}
+
+/* Button styling */
+button {
+  width: 200px;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: #e0a458;
+  color: #0d1b2a;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ffd580;
+  transform: scale(1.05);
+}
+
+/* Error message */
+.error-message {
+  color: #ff6b6b;
+  margin-top: 10px;
+  font-weight: 600;
+}

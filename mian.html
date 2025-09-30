@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" href="Image/posicon.ico" type="image/x-icon" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zee coffee shop-menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hamburger Button -->
+    <button class="hamburger" id="hamburger">☰</button>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <h3 class="logo">ZEE<span>&nbsp;COFFEE</span></h3>
+      <ul class="nav-links">
+        <li>
+          <a href="home.html"><i class="home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#"><i class="menu"></i> Menu</a>
+        </li>
+        <li>
+          <a href="#"><i class="oder"></i> My Orders</a>
+        </li>
+        <li>
+          <a href="#"><i class="Report"></i> Report</a>
+        </li>
+        <li>
+          <a href="#"><i class="stock"></i> Stock</a>
+        </li>
+        <!-- <li>
+          <a href="#"><i class="stock"></i> Log out</a>
+        </li> -->
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="categories">
+        <label class="text">COFFEE MENU</label>
+        <button class="category active">All</button>
+        <button class="category"><a href="#">Coffee</a></button>
+        <button class="category"><a href="#">Food</a></button>
+        <button class="category"><a href="#">Snack</a></button>
+        <button class="category"><a href="#">Dessert</a></button>
+        <button class="category"><a href="#">Drink</a></button>
+      </div>
+
+      <div class="menu-items" id="menu-items"></div>
+    </div>
+
+    <div id="cart"><h2>Your Products</h2></div>
+    <p class="heading">
+      Name &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Size
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Qty
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Price
+    </p>
+    <button class="print-cart" onclick="printProducts()">Print</button>
+    <!-- Include the script for toggling sidebar -->
+    <script src="script.js"></script>
+  </body>
+</html>
