@@ -22,6 +22,63 @@ hamburger.addEventListener("click", function () {
 });
 
 const menuItems = [
+   {
+    name: "Avocado",
+    price: 0.75,
+    image: "Image/drink/Avocado.jpg",
+    sizes: ["Small", "Large"],
+    category: "drink", // Added category
+  },
+   {
+    name: "Green Tea",
+    price: 0.75,
+    image: "Image/drink/Green-tea.jpg",
+    sizes: ["Small", "Large"],
+    category: "drink", // Added category
+  },
+   {
+    name: "Chocolate",
+    price: 0.75,
+    image: "Image/drink/Chocolate.jpg",
+    sizes: ["Small", "Large"],
+    category: "drink", // Added category
+  },
+   {
+    name: "Bluebery",
+    price: 0.75,
+    image: "Image/drink/Bluebery.jpg",
+    sizes: ["Small", "Large"],
+    category: "drink", // Added category
+  },
+   {
+    name: "Storbery",
+    price: 0.75,
+    image: "Image/drink/Storbery.jpg",
+    sizes: ["Small", "Large"],
+    category: "drink", // Added category
+  },
+   {
+    name: "Passion",
+    price: 0.75,
+    image: "Image/drink/passion.jpg",
+    sizes: ["Small", "Large"],
+    category: "drink", // Added category
+  },
+    {
+    name: "Passions",
+    price: 0.75,
+    image: "Image/drink/passion1.jpg",
+    sizes: ["Small", "Large"],
+    category: "drink", // Added category
+  },
+  {
+    name: "Passion Mill",
+    price: 0.75,
+    image: "Image/drink/passion-mill.jpg",
+    sizes: ["Small", "Large"],
+    category: "drink", // Added category
+  },
+ 
   {
     name: "IZE cola",
     price: 1.5,
@@ -48,21 +105,63 @@ const menuItems = [
     price: 2.5,
     image: "Image/drink/Nescafe.png",
     sizes: ["Small", "Large"],
-    category: "coffee", // Added category
-  },
-  {
-    name: "Exspress",
-    price: 2.5,
-    image: "Image/drink/exsprass.png",
-    sizes: ["Small", "Large"],
     category: "drink", // Added category
   },
   {
-    name: "Chicken",
-    price: 3,
-    image: "Image/snack/chicken.jpg",
+    name: "Exspresso",
+    price: 0.75,
+    image: "Image/Coffee/Espresso.jpg",
     sizes: ["Small", "Large"],
-    category: "snack", // Added category
+    category: "coffee", // Added category
+  },
+    {
+    name: "Hot Latte",
+    price: 0.75,
+    image: "Image/Coffee/Hot Latte.jpg",
+    sizes: ["Small", "Large"],
+    category: "coffee", // Added category
+  },
+  {
+    name: "Hot Cappuccino",
+    price: 0.75,
+    image: "Image/Coffee/Hot Cappuccino .jpg",
+    sizes: ["Small", "Large"],
+    category: "coffee", // Added category
+  },
+  {
+    name: "Hot Americano",
+    price: 0.75,
+    image: "Image/Coffee/Hot Americano.jpg",
+    sizes: ["Small", "Large"],
+    category: "coffee", // Added category
+  },
+  {
+    name: "Hot Latte",
+    price: 0.75,
+    image: "Image/Coffee/Hot Latte.jpg",
+    sizes: ["Small", "Large"],
+    category: "coffee", // Added category
+  },
+    {
+    name: "Iced Americano",
+    price: 0.75,
+    image: "Image/Coffee/Iced Americano.jpg",
+    sizes: ["Small", "Large"],
+    category: "coffee", // Added category
+  },
+    {
+    name: "Iced Latte",
+    price: 0.75,
+    image: "Image/Coffee/Iced Latte.jpg",
+    sizes: ["Small", "Large"],
+    category: "coffee", // Added category
+  },
+    {
+    name: "Iced Milk",
+    price: 0.75,
+    image: "Image/Coffee/Iced Milk.jpg",
+    sizes: ["Small", "Large"],
+    category: "coffee", // Added category
   },
 ];
 
